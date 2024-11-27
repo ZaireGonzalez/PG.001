@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Panel de Control - Agricultura Verde</h1>
+        <div class="modules">
+            <button class="module-btn" data-table="venta">Venta</button>
+            <button class="module-btn" data-table="anulacion">Anulación</button>
+            <button class="module-btn" data-table="cierre">Cierre</button>
+            <button class="module-btn" data-table="configuracion">Configuración</button>
+            <button class="module-btn" data-table="provedor">Proveedor</button>
+            <button class="module-btn" data-table="inventario">Inventario</button>
+        </div>
+        <div id="table-container" class="hidden">
+            <h2 id="table-title"></h2>
+            <table id="data-table">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
