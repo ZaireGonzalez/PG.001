@@ -1,18 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const loginForm = document.getElementById('login-form');
-
-    loginForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // Evitar el envío predeterminado del formulario
-
-        const username = document.getElementById('username').value.trim();
-        const password = document.getElementById('password').value.trim();
-
-        // Validar usuario y contraseña (puedes reemplazar esto con validación real)
-        if (username === 'admin' && password === '1234') {
-            alert('Inicio de sesión exitoso');
-            window.location.href = 'dashboard.html'; // Redirigir al menú
-        } else {
-            alert('Usuario o contraseña incorrectos');
-        }
-    });
-});
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Bienvenido</h2>
+            <p>Inicia sesión para continuar</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
